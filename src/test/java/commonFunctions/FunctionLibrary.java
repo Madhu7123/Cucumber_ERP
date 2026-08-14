@@ -122,11 +122,15 @@ public class FunctionLibrary {
 	{
 		if(!driver.findElement(By.xpath(conpro.getProperty("searchtextbox"))).isDisplayed())
 			driver.findElement(By.xpath(conpro.getProperty("serachpanel"))).click();
+		Thread.sleep(1000);
 		driver.findElement(By.xpath(conpro.getProperty("searchtextbox"))).clear();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath(conpro.getProperty("searchtextbox"))).sendKeys(Expected_Number);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
+		driver.findElement(By.xpath(conpro.getProperty("searchButton"))).click();
+		Thread.sleep(3000);
 		Actual_Number =driver.findElement(By.xpath("//table[@class='table ewTable']/tbody/tr[1]/td[6]/div/span/span")).getText();
+		Thread.sleep(2000);
 		Reporter.log(Expected_Number+"    "+Actual_Number,true);
 		try {
 			Assert.assertEquals(Actual_Number, Expected_Number, "Supplier number Not found in table");
@@ -134,10 +138,39 @@ public class FunctionLibrary {
 			System.out.println(e.getMessage());
 		}
 	}
+	//capture supplier number
+		public static void captureCusNumber(String Locatortype,String Locatorvalue)
+		{
+			Expected_Number = driver.findElement(By.name(Locatorvalue)).getAttribute("value");
+		}
+		//method to validate table
+		public static void customerTable() throws Throwable
+		{
+			if(!driver.findElement(By.xpath(conpro.getProperty("searchtextbox"))).isDisplayed())
+				driver.findElement(By.xpath(conpro.getProperty("serachpanel"))).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath(conpro.getProperty("searchtextbox"))).clear();
+			Thread.sleep(3000);
+			driver.findElement(By.xpath(conpro.getProperty("searchtextbox"))).sendKeys(Expected_Number);
+			Thread.sleep(1000);
+			driver.findElement(By.xpath(conpro.getProperty("searchButton"))).click();
+			Thread.sleep(3000);
+			Actual_Number =driver.findElement(By.xpath("//table[@class='table ewTable']/tbody/tr[1]/td[5]/div/span/span")).getText();
+			Thread.sleep(2000);
+			Reporter.log(Expected_Number+"    "+Actual_Number,true);
+			try {
+				Assert.assertEquals(Actual_Number, Expected_Number, "Supplier number Not found in table");
+			} catch (Throwable e) {
+				System.out.println(e.getMessage());
+			}
+		}
+	
 	public static void closeBrowser()
 	{
 		driver.quit();
 	}
+	
+	
 }
 
 

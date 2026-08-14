@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="0" failed="5" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Customer-00000003687    Customer-00000003687]]>
+    </line>
+    <line>
+      <![CDATA[Customer-00000003688    Customer-00000003688]]>
+    </line>
+    <line>
+      <![CDATA[Customer-00000003689    Customer-00000003689]]>
+    </line>
+    <line>
+      <![CDATA[Customer-00000003690    Customer-00000003690]]>
+    </line>
   </reporter-output>
-  <suite started-at="2026-03-06T11:39:32 IST" name="Default suite" finished-at="2026-03-06T11:39:32 IST" duration-ms="421">
+  <suite started-at="2026-03-07T12:45:05 IST" name="Default suite" finished-at="2026-03-07T12:46:15 IST" duration-ms="69777">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@3d34d211]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@6f4a47c7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-03-06T11:39:32 IST" name="Default test" finished-at="2026-03-06T11:39:32 IST" duration-ms="421">
+    <test started-at="2026-03-07T12:45:05 IST" name="Default test" finished-at="2026-03-07T12:46:15 IST" duration-ms="69777">
       <class name="testRunner.AppTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.AppTest@3d34d211]" started-at="2026-03-06T11:39:32 IST" name="setUpClass" finished-at="2026-03-06T11:39:32 IST" duration-ms="159" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-03-07T12:45:05 IST" name="setUpClass" finished-at="2026-03-07T12:45:06 IST" duration-ms="538" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@ebaa6cb]]>
+                <![CDATA[org.testng.TestRunner@6e5f5478]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@3d34d211]" started-at="2026-03-06T11:39:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-06T11:39:32 IST" duration-ms="118" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-03-07T12:45:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-07T12:45:12 IST" duration-ms="6215" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[""]]>
+                <![CDATA["validate customer Module"]]>
               </value>
             </param>
             <param index="1">
@@ -34,250 +46,54 @@
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[The step 'Launch Browser' and 29 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Launch Browser")
-public void launch_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("launch url in a browser")
-public void launch_url_in_a_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for username with {string} and {string}")
-public void wait_for_username_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter username with {string} and {string} and {string}")
-public void enter_username_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter password with {string} and {string} and {string}")
-public void enter_password_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click login with {string} and {string}")
-public void click_login_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for logout link with {string} and {string}")
-public void wait_for_logout_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Verify page title with {string}")
-public void verify_page_title_with(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for suppliiers link with {string} and {string}")
-public void wait_for_suppliiers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Suppliers link with {string} and {string}")
-public void click_suppliers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Add {double} Icon with {string} and {string}")
-public void wait_for_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add {double} icon with {string} and {string}")
-public void click_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Supplier Number with {string} and {string}")
-public void wait_for_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Captrure Supplier number with {string} and {string}")
-public void captrure_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter in {string} with {string} and {string}")
-public void enter_in_with_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add button with {string} and {string}")
-public void click_add_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for confirm ok with {string} and {string}")
-public void wait_for_confirm_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click confirm ok button with {string} and {string}")
-public void click_confirm_ok_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for alert ok with {string} and {string}")
-public void wait_for_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("ClickAlert ok with {string} and {string}")
-public void click_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Verify supplier number")
-public void verify_supplier_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Close app browser")
-public void close_app_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
+              <![CDATA[element not interactable
+  (Session info: chrome=146.0.7680.66)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [70996d5424018f490a5780339ef9250e, clearElement {id=f.32E0FB566D7F335CE91A1FA20021AB1E.d.34EF84D6D230535A72AE48EE355F0762.e.231}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.66 (8074df26380b..., userDataDir: C:\Users\Qedge\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57678}, goog:processID: 14296, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57678/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (70996d5424018f490a5780339ef9250e)] -> xpath: //input[@id='psearch']]
+Session ID: 70996d5424018f490a5780339ef9250e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Launch Browser' and 29 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Launch Browser")
-public void launch_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("launch url in a browser")
-public void launch_url_in_a_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for username with {string} and {string}")
-public void wait_for_username_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter username with {string} and {string} and {string}")
-public void enter_username_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter password with {string} and {string} and {string}")
-public void enter_password_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click login with {string} and {string}")
-public void click_login_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for logout link with {string} and {string}")
-public void wait_for_logout_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Verify page title with {string}")
-public void verify_page_title_with(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for suppliiers link with {string} and {string}")
-public void wait_for_suppliiers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Suppliers link with {string} and {string}")
-public void click_suppliers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Add {double} Icon with {string} and {string}")
-public void wait_for_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add {double} icon with {string} and {string}")
-public void click_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Supplier Number with {string} and {string}")
-public void wait_for_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Captrure Supplier number with {string} and {string}")
-public void captrure_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter in {string} with {string} and {string}")
-public void enter_in_with_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add button with {string} and {string}")
-public void click_add_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for confirm ok with {string} and {string}")
-public void wait_for_confirm_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click confirm ok button with {string} and {string}")
-public void click_confirm_ok_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for alert ok with {string} and {string}")
-public void wait_for_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("ClickAlert ok with {string} and {string}")
-public void click_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Verify supplier number")
-public void verify_supplier_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Close app browser")
-public void close_app_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.Launch Browser(file:///D:/Live_ProjectMrng1/ERP_Cucumber/FeatureFiles/ERP.feature:6)
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=146.0.7680.66)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [70996d5424018f490a5780339ef9250e, clearElement {id=f.32E0FB566D7F335CE91A1FA20021AB1E.d.34EF84D6D230535A72AE48EE355F0762.e.231}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.66 (8074df26380b..., userDataDir: C:\Users\Qedge\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57678}, goog:processID: 14296, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57678/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (70996d5424018f490a5780339ef9250e)] -> xpath: //input[@id='psearch']]
+Session ID: 70996d5424018f490a5780339ef9250e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+at commonFunctions.FunctionLibrary.customerTable(FunctionLibrary.java:150)
+at stepDefination.ERPStepDefinations.verify_customer_number(ERPStepDefinations.java:116)
+at ✽.Verify customer number(file:///D:/Live_ProjectMrng1/ERP_Cucumber/FeatureFiles/ERP.feature:73)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@3d34d211]" started-at="2026-03-06T11:39:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-06T11:39:32 IST" duration-ms="30" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-03-07T12:45:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-07T12:45:28 IST" duration-ms="15747" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[""]]>
+                <![CDATA["validate customer Module"]]>
               </value>
             </param>
             <param index="1">
@@ -286,250 +102,17 @@ at ✽.Launch Browser(file:///D:/Live_ProjectMrng1/ERP_Cucumber/FeatureFiles/ERP
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'Launch Browser' and 29 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Launch Browser")
-public void launch_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("launch url in a browser")
-public void launch_url_in_a_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for username with {string} and {string}")
-public void wait_for_username_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter username with {string} and {string} and {string}")
-public void enter_username_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter password with {string} and {string} and {string}")
-public void enter_password_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click login with {string} and {string}")
-public void click_login_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for logout link with {string} and {string}")
-public void wait_for_logout_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Verify page title with {string}")
-public void verify_page_title_with(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for suppliiers link with {string} and {string}")
-public void wait_for_suppliiers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Suppliers link with {string} and {string}")
-public void click_suppliers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Add {double} Icon with {string} and {string}")
-public void wait_for_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add {double} icon with {string} and {string}")
-public void click_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Supplier Number with {string} and {string}")
-public void wait_for_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Captrure Supplier number with {string} and {string}")
-public void captrure_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter in {string} with {string} and {string}")
-public void enter_in_with_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add button with {string} and {string}")
-public void click_add_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for confirm ok with {string} and {string}")
-public void wait_for_confirm_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click confirm ok button with {string} and {string}")
-public void click_confirm_ok_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for alert ok with {string} and {string}")
-public void wait_for_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("ClickAlert ok with {string} and {string}")
-public void click_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Verify supplier number")
-public void verify_supplier_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Close app browser")
-public void close_app_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Launch Browser' and 29 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Launch Browser")
-public void launch_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("launch url in a browser")
-public void launch_url_in_a_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for username with {string} and {string}")
-public void wait_for_username_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter username with {string} and {string} and {string}")
-public void enter_username_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter password with {string} and {string} and {string}")
-public void enter_password_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click login with {string} and {string}")
-public void click_login_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for logout link with {string} and {string}")
-public void wait_for_logout_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Verify page title with {string}")
-public void verify_page_title_with(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for suppliiers link with {string} and {string}")
-public void wait_for_suppliiers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Suppliers link with {string} and {string}")
-public void click_suppliers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Add {double} Icon with {string} and {string}")
-public void wait_for_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add {double} icon with {string} and {string}")
-public void click_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Supplier Number with {string} and {string}")
-public void wait_for_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Captrure Supplier number with {string} and {string}")
-public void captrure_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter in {string} with {string} and {string}")
-public void enter_in_with_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add button with {string} and {string}")
-public void click_add_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for confirm ok with {string} and {string}")
-public void wait_for_confirm_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click confirm ok button with {string} and {string}")
-public void click_confirm_ok_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for alert ok with {string} and {string}")
-public void wait_for_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("ClickAlert ok with {string} and {string}")
-public void click_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Verify supplier number")
-public void verify_supplier_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Close app browser")
-public void close_app_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.Launch Browser(file:///D:/Live_ProjectMrng1/ERP_Cucumber/FeatureFiles/ERP.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
+            <line>
+              <![CDATA[Customer-00000003687    Customer-00000003687]]>
+            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@3d34d211]" started-at="2026-03-06T11:39:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-06T11:39:32 IST" duration-ms="20" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-03-07T12:45:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-07T12:45:43 IST" duration-ms="15223" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[""]]>
+                <![CDATA["validate customer Module"]]>
               </value>
             </param>
             <param index="1">
@@ -538,250 +121,17 @@ at ✽.Launch Browser(file:///D:/Live_ProjectMrng1/ERP_Cucumber/FeatureFiles/ERP
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'Launch Browser' and 29 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Launch Browser")
-public void launch_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("launch url in a browser")
-public void launch_url_in_a_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for username with {string} and {string}")
-public void wait_for_username_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter username with {string} and {string} and {string}")
-public void enter_username_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter password with {string} and {string} and {string}")
-public void enter_password_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click login with {string} and {string}")
-public void click_login_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for logout link with {string} and {string}")
-public void wait_for_logout_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Verify page title with {string}")
-public void verify_page_title_with(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for suppliiers link with {string} and {string}")
-public void wait_for_suppliiers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Suppliers link with {string} and {string}")
-public void click_suppliers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Add {double} Icon with {string} and {string}")
-public void wait_for_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add {double} icon with {string} and {string}")
-public void click_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Supplier Number with {string} and {string}")
-public void wait_for_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Captrure Supplier number with {string} and {string}")
-public void captrure_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter in {string} with {string} and {string}")
-public void enter_in_with_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add button with {string} and {string}")
-public void click_add_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for confirm ok with {string} and {string}")
-public void wait_for_confirm_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click confirm ok button with {string} and {string}")
-public void click_confirm_ok_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for alert ok with {string} and {string}")
-public void wait_for_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("ClickAlert ok with {string} and {string}")
-public void click_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Verify supplier number")
-public void verify_supplier_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Close app browser")
-public void close_app_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Launch Browser' and 29 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Launch Browser")
-public void launch_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("launch url in a browser")
-public void launch_url_in_a_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for username with {string} and {string}")
-public void wait_for_username_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter username with {string} and {string} and {string}")
-public void enter_username_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter password with {string} and {string} and {string}")
-public void enter_password_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click login with {string} and {string}")
-public void click_login_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for logout link with {string} and {string}")
-public void wait_for_logout_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Verify page title with {string}")
-public void verify_page_title_with(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for suppliiers link with {string} and {string}")
-public void wait_for_suppliiers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Suppliers link with {string} and {string}")
-public void click_suppliers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Add {double} Icon with {string} and {string}")
-public void wait_for_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add {double} icon with {string} and {string}")
-public void click_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Supplier Number with {string} and {string}")
-public void wait_for_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Captrure Supplier number with {string} and {string}")
-public void captrure_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter in {string} with {string} and {string}")
-public void enter_in_with_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add button with {string} and {string}")
-public void click_add_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for confirm ok with {string} and {string}")
-public void wait_for_confirm_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click confirm ok button with {string} and {string}")
-public void click_confirm_ok_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for alert ok with {string} and {string}")
-public void wait_for_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("ClickAlert ok with {string} and {string}")
-public void click_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Verify supplier number")
-public void verify_supplier_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Close app browser")
-public void close_app_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.Launch Browser(file:///D:/Live_ProjectMrng1/ERP_Cucumber/FeatureFiles/ERP.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
+            <line>
+              <![CDATA[Customer-00000003688    Customer-00000003688]]>
+            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@3d34d211]" started-at="2026-03-06T11:39:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-06T11:39:32 IST" duration-ms="21" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-03-07T12:45:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-07T12:45:59 IST" duration-ms="16095" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[""]]>
+                <![CDATA["validate customer Module"]]>
               </value>
             </param>
             <param index="1">
@@ -790,250 +140,17 @@ at ✽.Launch Browser(file:///D:/Live_ProjectMrng1/ERP_Cucumber/FeatureFiles/ERP
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'Launch Browser' and 29 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Launch Browser")
-public void launch_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("launch url in a browser")
-public void launch_url_in_a_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for username with {string} and {string}")
-public void wait_for_username_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter username with {string} and {string} and {string}")
-public void enter_username_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter password with {string} and {string} and {string}")
-public void enter_password_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click login with {string} and {string}")
-public void click_login_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for logout link with {string} and {string}")
-public void wait_for_logout_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Verify page title with {string}")
-public void verify_page_title_with(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for suppliiers link with {string} and {string}")
-public void wait_for_suppliiers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Suppliers link with {string} and {string}")
-public void click_suppliers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Add {double} Icon with {string} and {string}")
-public void wait_for_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add {double} icon with {string} and {string}")
-public void click_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Supplier Number with {string} and {string}")
-public void wait_for_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Captrure Supplier number with {string} and {string}")
-public void captrure_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter in {string} with {string} and {string}")
-public void enter_in_with_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add button with {string} and {string}")
-public void click_add_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for confirm ok with {string} and {string}")
-public void wait_for_confirm_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click confirm ok button with {string} and {string}")
-public void click_confirm_ok_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for alert ok with {string} and {string}")
-public void wait_for_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("ClickAlert ok with {string} and {string}")
-public void click_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Verify supplier number")
-public void verify_supplier_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Close app browser")
-public void close_app_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Launch Browser' and 29 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Launch Browser")
-public void launch_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("launch url in a browser")
-public void launch_url_in_a_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for username with {string} and {string}")
-public void wait_for_username_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter username with {string} and {string} and {string}")
-public void enter_username_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter password with {string} and {string} and {string}")
-public void enter_password_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click login with {string} and {string}")
-public void click_login_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for logout link with {string} and {string}")
-public void wait_for_logout_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Verify page title with {string}")
-public void verify_page_title_with(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for suppliiers link with {string} and {string}")
-public void wait_for_suppliiers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Suppliers link with {string} and {string}")
-public void click_suppliers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Add {double} Icon with {string} and {string}")
-public void wait_for_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add {double} icon with {string} and {string}")
-public void click_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Supplier Number with {string} and {string}")
-public void wait_for_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Captrure Supplier number with {string} and {string}")
-public void captrure_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter in {string} with {string} and {string}")
-public void enter_in_with_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add button with {string} and {string}")
-public void click_add_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for confirm ok with {string} and {string}")
-public void wait_for_confirm_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click confirm ok button with {string} and {string}")
-public void click_confirm_ok_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for alert ok with {string} and {string}")
-public void wait_for_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("ClickAlert ok with {string} and {string}")
-public void click_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Verify supplier number")
-public void verify_supplier_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Close app browser")
-public void close_app_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.Launch Browser(file:///D:/Live_ProjectMrng1/ERP_Cucumber/FeatureFiles/ERP.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
+            <line>
+              <![CDATA[Customer-00000003689    Customer-00000003689]]>
+            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@3d34d211]" started-at="2026-03-06T11:39:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-06T11:39:32 IST" duration-ms="14" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-03-07T12:45:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-07T12:46:15 IST" duration-ms="15615" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[""]]>
+                <![CDATA["validate customer Module"]]>
               </value>
             </param>
             <param index="1">
@@ -1042,246 +159,13 @@ at ✽.Launch Browser(file:///D:/Live_ProjectMrng1/ERP_Cucumber/FeatureFiles/ERP
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'Launch Browser' and 29 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Launch Browser")
-public void launch_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("launch url in a browser")
-public void launch_url_in_a_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for username with {string} and {string}")
-public void wait_for_username_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter username with {string} and {string} and {string}")
-public void enter_username_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter password with {string} and {string} and {string}")
-public void enter_password_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click login with {string} and {string}")
-public void click_login_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for logout link with {string} and {string}")
-public void wait_for_logout_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Verify page title with {string}")
-public void verify_page_title_with(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for suppliiers link with {string} and {string}")
-public void wait_for_suppliiers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Suppliers link with {string} and {string}")
-public void click_suppliers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Add {double} Icon with {string} and {string}")
-public void wait_for_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add {double} icon with {string} and {string}")
-public void click_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Supplier Number with {string} and {string}")
-public void wait_for_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Captrure Supplier number with {string} and {string}")
-public void captrure_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter in {string} with {string} and {string}")
-public void enter_in_with_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add button with {string} and {string}")
-public void click_add_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for confirm ok with {string} and {string}")
-public void wait_for_confirm_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click confirm ok button with {string} and {string}")
-public void click_confirm_ok_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for alert ok with {string} and {string}")
-public void wait_for_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("ClickAlert ok with {string} and {string}")
-public void click_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Verify supplier number")
-public void verify_supplier_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Close app browser")
-public void close_app_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Launch Browser' and 29 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("Launch Browser")
-public void launch_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("launch url in a browser")
-public void launch_url_in_a_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for username with {string} and {string}")
-public void wait_for_username_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter username with {string} and {string} and {string}")
-public void enter_username_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter password with {string} and {string} and {string}")
-public void enter_password_with_and_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click login with {string} and {string}")
-public void click_login_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for logout link with {string} and {string}")
-public void wait_for_logout_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Verify page title with {string}")
-public void verify_page_title_with(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for suppliiers link with {string} and {string}")
-public void wait_for_suppliiers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Suppliers link with {string} and {string}")
-public void click_suppliers_link_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Add {double} Icon with {string} and {string}")
-public void wait_for_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add {double} icon with {string} and {string}")
-public void click_add_icon_with_and(Double double1, String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for Supplier Number with {string} and {string}")
-public void wait_for_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Captrure Supplier number with {string} and {string}")
-public void captrure_supplier_number_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Enter in {string} with {string} and {string}")
-public void enter_in_with_and(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Click Add button with {string} and {string}")
-public void click_add_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for confirm ok with {string} and {string}")
-public void wait_for_confirm_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click confirm ok button with {string} and {string}")
-public void click_confirm_ok_button_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Wait for alert ok with {string} and {string}")
-public void wait_for_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("ClickAlert ok with {string} and {string}")
-public void click_alert_ok_with_and(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Verify supplier number")
-public void verify_supplier_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("Close app browser")
-public void close_app_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at ✽.Launch Browser(file:///D:/Live_ProjectMrng1/ERP_Cucumber/FeatureFiles/ERP.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
+            <line>
+              <![CDATA[Customer-00000003690    Customer-00000003690]]>
+            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.AppTest@3d34d211]" started-at="2026-03-06T11:39:32 IST" name="tearDownClass" finished-at="2026-03-06T11:39:32 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-03-07T12:46:15 IST" name="tearDownClass" finished-at="2026-03-07T12:46:15 IST" duration-ms="298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
