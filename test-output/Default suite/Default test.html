@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 16 21:32:51 IST 2026</td>
+<td>Started on:</td><td>Sun Aug 16 21:42:54 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1395 ms)</td>
+<tr><td>Total time:</td><td>135 seconds (135610 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,5 +67,115 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.AppTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.AppTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate customer Module", "Unknown"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//button[contains(text(),&apos;OK&apos;)])[6] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\INDIAN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56478}, goog:processID: 16296, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56478/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 389276ceaca5fb0c66686fcc3e173dc9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:60)
+	at stepDefination.ERPStepDefinations.waitForAlert(ERPStepDefinations.java:85)
+	at ✽.Wait for alert ok with &quot;xpath&quot; and &quot;(//button[contains(text(),&apos;OK&apos;)])[6]&quot;(file:///D:/seleniumwork1130g/class%20files/ERP_Cucumber_lyst1772867975671/ERP_Cucumber/FeatureFiles/ERP.feature:71)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1451387509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1451387509'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//button[contains(text(),&apos;OK&apos;)])[6] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\INDIAN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56478}, goog:processID: 16296, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56478/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 389276ceaca5fb0c66686fcc3e173dc9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:60)
+	at stepDefination.ERPStepDefinations.waitForAlert(ERPStepDefinations.java:85)
+	at ✽.Wait for alert ok with &quot;xpath&quot; and &quot;(//button[contains(text(),&apos;OK&apos;)])[6]&quot;(file:///D:/seleniumwork1130g/class%20files/ERP_Cucumber_lyst1772867975671/ERP_Cucumber/FeatureFiles/ERP.feature:71)
+</pre></div></td>
+<td>24</td>
+<td>testRunner.AppTest@6f4a47c7</td></tr>
+<tr>
+<td title='testRunner.AppTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.AppTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate customer Module", "Unknown"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//button[contains(text(),&apos;OK&apos;)])[6] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\INDIAN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56518}, goog:processID: 8040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56518/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 084936b16bbd86dfde0a1e4dd3e50c8c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:60)
+	at stepDefination.ERPStepDefinations.waitForAlert(ERPStepDefinations.java:85)
+	at ✽.Wait for alert ok with &quot;xpath&quot; and &quot;(//button[contains(text(),&apos;OK&apos;)])[6]&quot;(file:///D:/seleniumwork1130g/class%20files/ERP_Cucumber_lyst1772867975671/ERP_Cucumber/FeatureFiles/ERP.feature:71)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1913607906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1913607906'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//button[contains(text(),&apos;OK&apos;)])[6] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\INDIAN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56518}, goog:processID: 8040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56518/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 084936b16bbd86dfde0a1e4dd3e50c8c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:60)
+	at stepDefination.ERPStepDefinations.waitForAlert(ERPStepDefinations.java:85)
+	at ✽.Wait for alert ok with &quot;xpath&quot; and &quot;(//button[contains(text(),&apos;OK&apos;)])[6]&quot;(file:///D:/seleniumwork1130g/class%20files/ERP_Cucumber_lyst1772867975671/ERP_Cucumber/FeatureFiles/ERP.feature:71)
+</pre></div></td>
+<td>37</td>
+<td>testRunner.AppTest@6f4a47c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.AppTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.AppTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate customer Module", "Unknown"<br/>
+<a href="#Output-6267452" onClick='toggleBox("Output-6267452", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6267452" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6267452">
+Customer-00000000531    Customer-00000000531<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>testRunner.AppTest@6f4a47c7</td></tr>
+<tr>
+<td title='testRunner.AppTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.AppTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate customer Module", "Unknown"<br/>
+<a href="#Output-486286648" onClick='toggleBox("Output-486286648", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-486286648" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-486286648">
+Customer-00000000532    Customer-00000000532<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>testRunner.AppTest@6f4a47c7</td></tr>
+<tr>
+<td title='testRunner.AppTest.runScenario()'><b>runScenario</b><br>Test class: testRunner.AppTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate customer Module", "Unknown"<br/>
+<a href="#Output-1513743700" onClick='toggleBox("Output-1513743700", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1513743700" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1513743700">
+Customer-00000000535    Customer-00000000535<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>testRunner.AppTest@6f4a47c7</td></tr>
+</table><p>
 </body>
 </html>

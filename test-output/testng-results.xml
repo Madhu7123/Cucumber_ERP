@@ -1,27 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Customer-00000000531    Customer-00000000531]]>
+    </line>
+    <line>
+      <![CDATA[Customer-00000000532    Customer-00000000532]]>
+    </line>
+    <line>
+      <![CDATA[Customer-00000000535    Customer-00000000535]]>
+    </line>
   </reporter-output>
-  <suite started-at="2026-08-16T21:32:51 IST" name="Default suite" finished-at="2026-08-16T21:32:52 IST" duration-ms="1395">
+  <suite started-at="2026-08-16T21:42:54 IST" name="Default suite" finished-at="2026-08-16T21:45:10 IST" duration-ms="135610">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@6f4a47c7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-08-16T21:32:51 IST" name="Default test" finished-at="2026-08-16T21:32:52 IST" duration-ms="1395">
+    <test started-at="2026-08-16T21:42:54 IST" name="Default test" finished-at="2026-08-16T21:45:10 IST" duration-ms="135610">
       <class name="testRunner.AppTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-08-16T21:32:51 IST" name="setUpClass" finished-at="2026-08-16T21:32:52 IST" duration-ms="1227" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-08-16T21:42:54 IST" name="setUpClass" finished-at="2026-08-16T21:42:55 IST" duration-ms="1200" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@59aa20b3]]>
+                <![CDATA[org.testng.TestRunner@6ace919c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-08-16T21:32:52 IST" name="tearDownClass" finished-at="2026-08-16T21:32:52 IST" duration-ms="85" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-08-16T21:42:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-16T21:43:19 IST" duration-ms="23642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate customer Module"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unknown"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Customer-00000000531    Customer-00000000531]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-08-16T21:43:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-16T21:43:42 IST" duration-ms="22767" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate customer Module"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unknown"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Customer-00000000532    Customer-00000000532]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-08-16T21:43:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-16T21:44:06 IST" duration-ms="24065" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate customer Module"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unknown"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//button[contains(text(),'OK')])[6] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\INDIAN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56478}, goog:processID: 16296, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56478/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 389276ceaca5fb0c66686fcc3e173dc9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//button[contains(text(),'OK')])[6] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\INDIAN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56478}, goog:processID: 16296, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56478/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 389276ceaca5fb0c66686fcc3e173dc9
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:60)
+at stepDefination.ERPStepDefinations.waitForAlert(ERPStepDefinations.java:85)
+at ✽.Wait for alert ok with "xpath" and "(//button[contains(text(),'OK')])[6]"(file:///D:/seleniumwork1130g/class%20files/ERP_Cucumber_lyst1772867975671/ERP_Cucumber/FeatureFiles/ERP.feature:71)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-08-16T21:44:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-16T21:44:43 IST" duration-ms="37087" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate customer Module"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unknown"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//button[contains(text(),'OK')])[6] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\INDIAN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56518}, goog:processID: 8040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56518/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 084936b16bbd86dfde0a1e4dd3e50c8c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//button[contains(text(),'OK')])[6] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\INDIAN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56518}, goog:processID: 8040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56518/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 084936b16bbd86dfde0a1e4dd3e50c8c
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at commonFunctions.FunctionLibrary.waitForElement(FunctionLibrary.java:60)
+at stepDefination.ERPStepDefinations.waitForAlert(ERPStepDefinations.java:85)
+at ✽.Wait for alert ok with "xpath" and "(//button[contains(text(),'OK')])[6]"(file:///D:/seleniumwork1130g/class%20files/ERP_Cucumber_lyst1772867975671/ERP_Cucumber/FeatureFiles/ERP.feature:71)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-08-16T21:44:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-08-16T21:45:09 IST" duration-ms="26506" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate customer Module"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unknown"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Customer-00000000535    Customer-00000000535]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.AppTest@6f4a47c7]" started-at="2026-08-16T21:45:09 IST" name="tearDownClass" finished-at="2026-08-16T21:45:10 IST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -7,8 +7,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(dryRun = false,
 features = {"FeatureFiles"},
 glue = {"stepDefination"},
-tags= "@customers",
-//tags="@customers" ,
+//tags = "@suppliers and @customers",
+//tags="@suppliers,@customers",
+tags="@customers" ,
 plugin = {"pretty","html:target/report/cucumber.html",
 		"junit:target/report/cucumber.xml",
 		"json:target/report/cucumber.json"})
